@@ -42,6 +42,46 @@ export default {
 
             </div>
         </div>
+    </section>
+    <section class="container-fluid sectionSpecials">
+        <div class="row">
+            <div class="col-6 relatived">
+                <img class="specialsImg" src="/img/h1-img-4.jpg" alt="">
+                <img class="specialsInsideImg" src="/img/h1-img-7n.png" alt="">
+            </div>
+            <div class="col-6">
+                <div class="text-black specialsContent">
+                    <h3 class="specialsTitles">SPECIALS*</h3>
+                    <p class="specialsParag pb-4 fs-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesent
+                        ut.</p>
+                    <div class="d-flex">
+                        <h4 class="specialsPrice">$10</h4>
+                        <div class="ps-4">
+                            <h4 class="specialsTitles">COMBO PICCOLO</h4>
+                            <p class="specialsParag">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae,
+                                veniam architecto.</p>
+                        </div>
+                    </div>
+                    <div class="d-flex">
+                        <h4 class="specialsPrice">$20</h4>
+                        <div class="ps-4">
+                            <h4 class="specialsTitles">COMBO PICCOLO</h4>
+                            <p class="specialsParag">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae,
+                                veniam architecto.</p>
+                        </div>
+                    </div>
+                    <div class="d-flex">
+                        <h4 class="specialsPrice">$30</h4>
+                        <div class="ps-4">
+                            <h4 class="specialsTitles">COMBO PICCOLO</h4>
+                            <p class="specialsParag">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae,
+                                veniam architecto.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
 
     </section>
 </template>
@@ -65,6 +105,55 @@ export default {
 .sectionBeige {
     background-image: url("/public/img/h3-testimonials-bckgrnd.jpg");
     height: 485px;
+}
+
+//Sezione 5 - Specials
+.sectionSpecials {
+    width: 1922px;
+    height: 823px;
+    background-color: white;
+    padding: 0.8rem 0;
+}
+
+.relatived {
+    position: relative;
+}
+
+.specialsImg {
+    width: 100%;
+    position: relative;
+}
+
+.specialsInsideImg {
+    width: 40%;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.specialsContent {
+    width: 40%;
+    align-self: center;
+    margin-left: 15rem;
+    margin-top: 11rem;
+    font-size: 1.2rem;
+}
+
+.specialsTitles {
+    color: #303030;
+    font-weight: 600;
+}
+
+.specialsPrice {
+    color: #ab4027;
+}
+
+.specialsParag {
+    color: #767676;
+    font-size: 1rem;
 }
 
 // ...qui eventuale SCSS di AppComponent
