@@ -29,16 +29,16 @@ export default {
                     <button id="orderBtn">ORDER ONLINE</button>
                 </div>
                 <div class="col-8 text-center">
-                    <a href="#"><img class="mustache" src="/public/svg/svg-0.svg" alt="">HOME</a>
+                    <a href="#"><img class="mustache" src="/svg/svg-0.svg" alt="">HOME</a>
                     <a href="#">PAGES</a>
                     <a href="#">MENU</a>
-                    <img class="headerLogo" src="/public/img/h5-logo-divided-header.png" alt="">
+                    <img class="headerLogo" src="/img/h5-logo-divided-header.png" alt="">
                     <a href="#">EVENT</a>
                     <a href="#">BLOG</a>
                     <a href="#">LANDING</a>
                 </div>
                 <div class="col-2">
-                    <a class="p-0" href="#"><img class="cartIcon" src="/public/svg/svg-1.svg" alt="">CART</a>
+                    <a class="p-0" href="#"><img class="cartIcon" src="/svg/svg-1.svg" alt="">CART</a>
                     <a class="p-0" href="#"><font-awesome-icon class="magnifyingGlassIcon"
                             icon="fa-solid fa-magnifying-glass" />SEARCH</a>
                 </div>
@@ -85,7 +85,7 @@ a {
 }
 
 header {
-    background-image: url(../../public/img/cielostellato.PNG);
+    background-image: url(/img/cielostellato.PNG);
     background-position: bottom;
 }
 
