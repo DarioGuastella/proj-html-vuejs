@@ -1,9 +1,13 @@
 <script>
 import { store } from "../store.js" //state management
 import register from "../debug" //per debuggare il componente da console
+import Slider from "./Slider.vue"
 
 export default {
     name: "AppMain",
+    components: {
+        Slider
+    },
     data() {
         return {
             store
@@ -22,9 +26,7 @@ export default {
 </script>
 
 <template>
-    <div class="text-center">
-        <h1>Sono il main!</h1>
-    </div>
+    <Slider />
 </template>
 
 <style scoped lang="scss">

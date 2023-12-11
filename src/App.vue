@@ -2,7 +2,7 @@
 import AppHeader from "./components/AppHeader.vue";
 import AppMain from "./components/AppMain.vue";
 import AppFooter from "./components/AppFooter.vue";
-import Slider from "./components/Slider.vue"
+
 
 import axios from 'axios'; //importo Axios
 import { store } from "./store.js" //state management
@@ -12,7 +12,7 @@ export default {
 		AppHeader,
 		AppMain,
 		AppFooter,
-		Slider
+
 
 	},
 	data() {
@@ -40,7 +40,6 @@ export default {
 <template>
 	<AppHeader />
 	<AppMain />
-	<Slider />
 	<AppFooter />
 </template>
 
