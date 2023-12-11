@@ -81,7 +81,7 @@ a {
 }
 
 .headerWrapper {
-    padding-top: 2rem;
+    padding: 2rem;
 }
 
 header {
