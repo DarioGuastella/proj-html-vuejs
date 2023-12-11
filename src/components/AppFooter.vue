@@ -3,7 +3,7 @@ import { store } from "../store.js" //state management
 import register from "../debug" //per debuggare il componente da console
 
 export default {
-    name: "AppComponent",
+    name: "AppFooter",
     data() {
         return {
             store
@@ -11,7 +11,7 @@ export default {
     },
     methods: {
         doThings() {
-            console.log("AppComponent does things");
+            console.log("AppFooter does things");
         }
     },
     mounted() {
@@ -23,7 +23,7 @@ export default {
 
 <template>
     <div class="text-center">
-        <h1>Sono un componente!</h1>
+        <h1>Sono il footer!</h1>
     </div>
 </template>
 

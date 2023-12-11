@@ -1,12 +1,17 @@
 <script>
-import AppComponent from "./components/AppComponent.vue"
+import AppHeader from "./components/AppHeader.vue";
+import AppMain from "./components/AppMain.vue";
+import AppFooter from "./components/AppFooter.vue";
 
 import axios from 'axios'; //importo Axios
 import { store } from "./store.js" //state management
 
 export default {
 	components: {
-		AppComponent
+		AppHeader,
+		AppMain,
+		AppFooter,
+
 	},
 	data() {
 		return {
@@ -31,11 +36,9 @@ export default {
 </script>
 
 <template>
-	<main>
-		<AppComponent />
-
-		<button class="btn btn-primary">Primary button</button>
-	</main>
+	<AppHeader />
+	<AppMain />
+	<AppFooter />
 </template>
 
 <style lang="scss">
