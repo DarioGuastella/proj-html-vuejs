@@ -65,7 +65,7 @@ export default {
                     <div class="d-flex">
                         <h4 class="specialsPrice">$20</h4>
                         <div class="ps-4">
-                            <h4 class="specialsTitles">COMBO PICCOLO</h4>
+                            <h4 class="specialsTitles">COMBO MEZZO</h4>
                             <p class="specialsParag">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae,
                                 veniam architecto.</p>
                         </div>
@@ -73,7 +73,7 @@ export default {
                     <div class="d-flex">
                         <h4 class="specialsPrice">$30</h4>
                         <div class="ps-4">
-                            <h4 class="specialsTitles">COMBO PICCOLO</h4>
+                            <h4 class="specialsTitles">COMBO GRANDE</h4>
                             <p class="specialsParag">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae,
                                 veniam architecto.</p>
                         </div>
