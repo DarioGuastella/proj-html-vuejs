@@ -43,8 +43,8 @@ export default {
             </div>
         </div>
     </section>
-    <section class="container-fluid sectionSpecials">
-        <div class="row">
+    <section class="container-fluid sectionSpecials w-100">
+        <div class="row w-100">
             <div class="col-6 relatived">
                 <img class="specialsImg" src="/img/h1-img-4.jpg" alt="">
                 <img class="specialsInsideImg" src="/img/h1-img-7n.png" alt="">
