@@ -26,7 +26,9 @@ export default {
 </script>
 
 <template>
+    <!-- JUMBO -->
     <Slider /><!-- ToDo: slider content e fade -->
+    <!-- SEZIONE 1 -->
     <section class="container-fluid bg-light py-2 w-100"> <!-- ToDo: hover -->
         <div class="row">
             <div class="col-3 px-2"><img class="quarterImg" src="/img/h3-img-1.jpg" alt=""></div>
@@ -35,6 +37,7 @@ export default {
             <div class="col-3 px-2"><img class="quarterImg" src="/img/h3-img-4.jpg" alt=""></div>
         </div>
     </section>
+    <!-- SEZIONE 2 TESTIMONIALS -->
     <section class="container-fluid sectionBeige"><!-- ToDo: slider -->
         <div class="row">
             <div class="col-6 offset-md-3 text-center">
@@ -43,6 +46,7 @@ export default {
             </div>
         </div>
     </section>
+    <!-- SEZIONE 3 SPECIALS -->
     <section class="container-fluid sectionSpecials w-100">
         <div class="row w-100">
             <div class="col-6 relatived">
@@ -82,20 +86,34 @@ export default {
                 </div>
             </div>
         </div>
-
+    </section>
+    <!-- Sezione 4 PARALLAX --> <!--ToDo: fix parallax-->
+    <section>
+        <div class="container-fluid parallaxSection parallax">
+            <div class="row">
+                <div class="col-4 offset-md-2">
+                    <h3 class="buildPizza">
+                        GO AHEAD AND <br>
+                        BUILD YOUR<br>
+                        OWN PIZZA<br>
+                        WE WON’T<br>
+                        JUDGE!</h3>
+                </div>
+            </div>
+        </div>
     </section>
 </template>
 
 <style scoped lang="scss">
 // importo variabili
 // @use './styles/partials/variables' as *;
-//Sezione 3 - after jumbotron
+//Sezione 1 - after jumbotron
 .quarterImg {
     width: 468px;
     height: 320px;
 }
 
-//Sezione 4 - quotes slider
+//Sezione 2 - quotes slider
 .quotesMark {
     font-size: 15rem;
     color: #b7903c;
@@ -107,7 +125,7 @@ export default {
     height: 485px;
 }
 
-//Sezione 5 - Specials
+//Sezione 3 - Specials
 .sectionSpecials {
     width: 1922px;
     height: 823px;
@@ -154,6 +172,27 @@ export default {
 .specialsParag {
     color: #767676;
     font-size: 1rem;
+}
+
+//Sezione 4 - Parallax
+.parallaxSection {
+    background-image: url(/img/h3-background-img.jpg);
+    height: 650px;
+}
+
+.buildPizza {
+    font-size: 4rem;
+    font-weight: 600;
+    margin-top: 5rem;
+    position: relative;
+    left: 3rem;
+}
+
+.parallax {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 // ...qui eventuale SCSS di AppComponent
