@@ -135,6 +135,79 @@ export default {
             </div>
         </div>
     </section>
+    <!-- Sezione 9 - Booking a table -->
+    <section class="bookingSection d-flex align-items-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 d-flex align-items-center">
+                    <select class="form-select peopleBox box formText" aria-label="Default select example">
+                        <option selected>1 Person</option>
+                        <option class="formText" value="1">2 People</option>
+                        <option class="formText" value="2">3 People</option>
+                        <option class="formText" value="3">4 People</option>
+                        <option class="formText" value="4">5 People</option>
+                        <option class="formText" value="5">6 People</option>
+                        <option class="formText" value="6">7 People</option>
+                        <option class="formText" value="7">8 People</option>
+                        <option class="formText" value="8">9 People</option>
+                        <option class="formText" value="9">10 People</option>
+                        <option class="formText" value="10">11 People</option>
+                        <option class="formText" value="11">12 People</option>
+                        <option class="formText" value="12">13 People</option>
+                        <option class="formText" value="13">14 People</option>
+                        <option class="formText" value="14">15 People</option>
+                        <option class="formText" value="15">16 People</option>
+                        <option class="formText" value="16">17 People</option>
+                        <option class="formText" value="17">18 People</option>
+                        <option class="formText" value="18">19 People</option>
+                        <option class="formText" value="19">20 People</option>
+                    </select>
+                    <h4 class="bookingText">FOR</h4>
+                    <input class="dateBox box formText" type="date">
+                    <h4 class="bookingText">AT</h4>
+                    <select class="form-select timeBox box formText" aria-label="Default select example">
+                        <option class="formText" value="1">6:30 am</option>
+                        <option class="formText" value="2">7:00 am</option>
+                        <option class="formText" value="3">7:30 am</option>
+                        <option class="formText" value="4">8:00 am</option>
+                        <option class="formText" selected value="5">8:30 am</option>
+                        <option class="formText" value="6">9:00 am</option>
+                        <option class="formText" value="7">9:30 am</option>
+                        <option class="formText" value="8">10:00 am</option>
+                        <option class="formText" value="9">10:30 am</option>
+                        <option class="formText" value="10">11:00 am</option>
+                        <option class="formText" value="11">11:30 am</option>
+                        <option class="formText" value="12">12:00 pm</option>
+                        <option class="formText" value="13">12:30 pm</option>
+                        <option class="formText" value="14">01:00 pm</option>
+                        <option class="formText" value="15">01:30 pm</option>
+                        <option class="formText" value="16">02:00 pm</option>
+                        <option class="formText" value="17">02:30 pm</option>
+                        <option class="formText" value="18">03:00 pm</option>
+                        <option class="formText" value="19">03:30 pm</option>
+                        <option class="formText" value="20">04:00 pm</option>
+                        <option class="formText" value="21">04:30 pm</option>
+                        <option class="formText" value="22">05:00 pm</option>
+                        <option class="formText" value="23">05:30 pm</option>
+                        <option class="formText" value="24">06:00 pm</option>
+                        <option class="formText" value="25">06:30 pm</option>
+                        <option class="formText" value="26">07:00 pm</option>
+                        <option class="formText" value="27">07:30 pm</option>
+                        <option class="formText" value="28">08:80 pm</option>
+                        <option class="formText" value="29">08:30 pm</option>
+                        <option class="formText" value="30">09:00 pm</option>
+                        <option class="formText" value="31">09:30 pm</option>
+                        <option class="formText" value="32">10:00 pm</option>
+                        <option class="formText" value="33">10:30 pm</option>
+                        <option class="formText" value="34">11:00 pm</option>
+                        <option class="formText" value="35">11:30 pm</option>
+                    </select>
+                    <button id="bookBtn">BOOK A TABLE</button>
+                </div>
+            </div>
+        </div>
+
+    </section>
 </template>
 
 <style scoped lang="scss">
@@ -248,6 +321,62 @@ export default {
 
 .clientsImg {
     width: calc(100% / 5);
+}
+
+//Sezione 9 Book a table
+.bookingSection {
+    height: 296px;
+    background-image: url(/img/h3-background-img-3.jpg);
+}
+
+.box {
+    width: 20%;
+    padding: 1rem;
+}
+
+.peopleBox {
+
+    background-image: url(../../public/svg/user-group-solid.svg);
+}
+
+.timeBox {
+    background-image: url(../../public/svg/clock-regular.svg);
+    background-size: 7%;
+}
+
+.formText {
+    color: #a6a6a6;
+    font-weight: 300;
+    font-size: 1.2rem;
+}
+
+.bookingText {
+    padding: 0 2rem;
+}
+
+#bookBtn {
+    /*Reset*/
+    display: inline-block;
+    outline: none;
+    background-color: white;
+
+    /*Some fancy stuff*/
+    line-height: 200%;
+    border: 0;
+    /*Magic*/
+    background-image: linear-gradient(#d2401e, #d2401e 50%, #c83b1a 50%, #c83b1a);
+    background-size: 100% 200%;
+    transition: background-position .3s;
+    color: white;
+    width: 259px;
+    height: 62.8px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-left: 4rem;
+
+    &:hover {
+        background-position: 0 100%;
+    }
 }
 
 // ...qui eventuale SCSS di AppComponent
