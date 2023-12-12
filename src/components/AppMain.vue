@@ -121,6 +121,20 @@ export default {
             </div>
         </div>
     </section>
+    <!-- Sezione 6 - Clients --><!--ToDo: slider & hover-->
+    <section class="clientsSection d-flex align-items-center">
+        <div class="container clientsWrapper d-flex">
+            <div class="row align-self-center">
+                <div class="col-12 px-0">
+                    <img class="clientsImg" src="/img/h1-clients-img-1.png" alt="">
+                    <img class="clientsImg" src="/img/h1-clients-img-2.png" alt="">
+                    <img class="clientsImg" src="/img/h1-clients-img-3.png" alt="">
+                    <img class="clientsImg" src="/img/h1-clients-img-4.png" alt="">
+                    <img class="clientsImg" src="/img/h1-clients-img-5.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
 </template>
 
 <style scoped lang="scss">
@@ -219,6 +233,21 @@ export default {
     width: calc(100% / 4);
     padding-right: 0;
     padding-left: 0;
+}
+
+//Sezione 6 - Clients
+
+.clientsSection {
+    height: 315px;
+    background-color: #f6f7f2;
+}
+
+.clientsWrapper {
+    width: 70%;
+}
+
+.clientsImg {
+    width: calc(100% / 5);
 }
 
 // ...qui eventuale SCSS di AppComponent
