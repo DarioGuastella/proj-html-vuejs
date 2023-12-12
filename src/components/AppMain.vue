@@ -102,6 +102,25 @@ export default {
             </div>
         </div>
     </section>
+    <!-- Sezione 5 - TEAM --> <!--ToDo: Hover-->
+    <section>
+        <div class="container-fluid py-2 bg-light">
+            <div class="row">
+                <div class="col-3 teamCard">
+                    <img class="w-100" src="/img/h1-team-1a-700x700.jpg" alt="">
+                </div>
+                <div class="col-3 teamCard">
+                    <img class="w-100" src="/img/h1-team-2a.jpg" alt="">
+                </div>
+                <div class="col-3 teamCard">
+                    <img class="w-100" src="/img/h1-team-4a.jpg" alt="">
+                </div>
+                <div class="col-3 teamCard">
+                    <img class="w-100" src="/img/h1-team-3a.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
 </template>
 
 <style scoped lang="scss">
@@ -193,6 +212,13 @@ export default {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+//Sezione 5 Team
+.teamCard {
+    width: calc(100% / 4);
+    padding-right: 0;
+    padding-left: 0;
 }
 
 // ...qui eventuale SCSS di AppComponent
