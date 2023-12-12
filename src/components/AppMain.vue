@@ -103,7 +103,7 @@ export default {
 }
 
 .sectionBeige {
-    background-image: url("/public/img/h3-testimonials-bckgrnd.jpg");
+    background-image: url("/img/h3-testimonials-bckgrnd.jpg");
     height: 485px;
 }
 

@@ -12,9 +12,13 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
 /* import specific icons */
 import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons'
+import { faFacebook } from "@fortawesome/free-brands-svg-icons"
+import { faTwitter } from "@fortawesome/free-brands-svg-icons"
+import { faInstagram } from "@fortawesome/free-brands-svg-icons"
+import { faLinkedin } from "@fortawesome/free-brands-svg-icons"
 
 /* add icons to the library */
-library.add(faMagnifyingGlass);
+library.add(faMagnifyingGlass, faFacebook, faTwitter, faInstagram, faLinkedin);
 
 window.vue = {};
 window.vue.App = createApp(App)
