@@ -135,6 +135,53 @@ export default {
             </div>
         </div>
     </section>
+    <!-- Sezione 8 -  Deals ToDo: icon & hover-->
+    <section>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-6 dealText">
+                    <div class="dealTextBox">
+                        <h5 class="d-block redText fs-6">MADE WITH LOVE</h5>
+                        <h3 class="d-block fs-1">DELISH PIZZA DEALS</h3>
+                        <div class="d-flex align-items-center myHr py-5">
+                            <div class="text-center">
+                                <h2 class="dayText redText">02</h2>
+                                <h3>NOV</h3>
+                            </div>
+                            <div class="ps-5">
+                                <h4>TRADITIONAL NEAPOLITAN PIES IN KYOTO PIZZA MERCATO</h4>
+                                <a class="dealsLink redText" href="#"> 204 E. Pizzetta Tommaso</a>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center myHr py-5">
+                            <div class="text-center">
+                                <h2 class="dayText redText">03</h2>
+                                <h3>NOV</h3>
+                            </div>
+                            <div class="ps-5">
+                                <h4>TERARAZZA PATIO DINING SPACE OPENING THIS WEEKEND</h4>
+                                <a class="dealsLink redText" href="#"> 204 E. Pizzetta Tommaso</a>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center myHr py-5">
+                            <div class="text-center">
+                                <h2 class="dayText redText">05</h2>
+                                <h3>NOV</h3>
+                            </div>
+                            <div class="ps-5">
+                                <h4>SIENNA PRIVATE DINING ROOM WITH STÉPHANE BRUNN</h4>
+                                <a class="dealsLink redText" href="#"> 204 E. Pizzetta Tommaso</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-6 ps-0 pe-0">
+                    <img class="dealsImg" src="/img/h3-img-5a.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- Sezione 9 - Booking a table -->
     <section class="bg-light py-2">
         <div class="bookingSection d-flex align-items-center">
@@ -323,6 +370,41 @@ export default {
 
 .clientsImg {
     width: calc(100% / 5);
+}
+
+//Sezione 8 - Deals
+.dealText {
+    background-image: url(/img/cielostellato.PNG);
+    background-size: cover;
+}
+
+.redText {
+    color: #d2401e;
+}
+
+.dayText {
+    font-size: 3.5rem;
+}
+
+.myHr {
+    border-bottom: 2px dotted #b68a2c;
+
+}
+
+.dealsLink {
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 300;
+}
+
+.dealTextBox {
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 6rem;
+}
+
+.dealsImg {
+    width: 100%;
 }
 
 //Sezione 9 Book a table
