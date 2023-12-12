@@ -136,77 +136,79 @@ export default {
         </div>
     </section>
     <!-- Sezione 9 - Booking a table -->
-    <section class="bookingSection d-flex align-items-center">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 d-flex align-items-center">
-                    <select class="form-select peopleBox box formText" aria-label="Default select example">
-                        <option selected>1 Person</option>
-                        <option class="formText" value="1">2 People</option>
-                        <option class="formText" value="2">3 People</option>
-                        <option class="formText" value="3">4 People</option>
-                        <option class="formText" value="4">5 People</option>
-                        <option class="formText" value="5">6 People</option>
-                        <option class="formText" value="6">7 People</option>
-                        <option class="formText" value="7">8 People</option>
-                        <option class="formText" value="8">9 People</option>
-                        <option class="formText" value="9">10 People</option>
-                        <option class="formText" value="10">11 People</option>
-                        <option class="formText" value="11">12 People</option>
-                        <option class="formText" value="12">13 People</option>
-                        <option class="formText" value="13">14 People</option>
-                        <option class="formText" value="14">15 People</option>
-                        <option class="formText" value="15">16 People</option>
-                        <option class="formText" value="16">17 People</option>
-                        <option class="formText" value="17">18 People</option>
-                        <option class="formText" value="18">19 People</option>
-                        <option class="formText" value="19">20 People</option>
-                    </select>
-                    <h4 class="bookingText">FOR</h4>
-                    <input class="dateBox box formText" type="date">
-                    <h4 class="bookingText">AT</h4>
-                    <select class="form-select timeBox box formText" aria-label="Default select example">
-                        <option class="formText" value="1">6:30 am</option>
-                        <option class="formText" value="2">7:00 am</option>
-                        <option class="formText" value="3">7:30 am</option>
-                        <option class="formText" value="4">8:00 am</option>
-                        <option class="formText" selected value="5">8:30 am</option>
-                        <option class="formText" value="6">9:00 am</option>
-                        <option class="formText" value="7">9:30 am</option>
-                        <option class="formText" value="8">10:00 am</option>
-                        <option class="formText" value="9">10:30 am</option>
-                        <option class="formText" value="10">11:00 am</option>
-                        <option class="formText" value="11">11:30 am</option>
-                        <option class="formText" value="12">12:00 pm</option>
-                        <option class="formText" value="13">12:30 pm</option>
-                        <option class="formText" value="14">01:00 pm</option>
-                        <option class="formText" value="15">01:30 pm</option>
-                        <option class="formText" value="16">02:00 pm</option>
-                        <option class="formText" value="17">02:30 pm</option>
-                        <option class="formText" value="18">03:00 pm</option>
-                        <option class="formText" value="19">03:30 pm</option>
-                        <option class="formText" value="20">04:00 pm</option>
-                        <option class="formText" value="21">04:30 pm</option>
-                        <option class="formText" value="22">05:00 pm</option>
-                        <option class="formText" value="23">05:30 pm</option>
-                        <option class="formText" value="24">06:00 pm</option>
-                        <option class="formText" value="25">06:30 pm</option>
-                        <option class="formText" value="26">07:00 pm</option>
-                        <option class="formText" value="27">07:30 pm</option>
-                        <option class="formText" value="28">08:80 pm</option>
-                        <option class="formText" value="29">08:30 pm</option>
-                        <option class="formText" value="30">09:00 pm</option>
-                        <option class="formText" value="31">09:30 pm</option>
-                        <option class="formText" value="32">10:00 pm</option>
-                        <option class="formText" value="33">10:30 pm</option>
-                        <option class="formText" value="34">11:00 pm</option>
-                        <option class="formText" value="35">11:30 pm</option>
-                    </select>
-                    <button id="bookBtn">BOOK A TABLE</button>
+    <section class="bg-light py-2">
+        <div class="bookingSection d-flex align-items-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 d-flex align-items-center">
+                        <select class="form-select peopleBox box formText" aria-label="Default select example">
+                            <option selected>1 Person</option>
+                            <option class="formText" value="1">2 People</option>
+                            <option class="formText" value="2">3 People</option>
+                            <option class="formText" value="3">4 People</option>
+                            <option class="formText" value="4">5 People</option>
+                            <option class="formText" value="5">6 People</option>
+                            <option class="formText" value="6">7 People</option>
+                            <option class="formText" value="7">8 People</option>
+                            <option class="formText" value="8">9 People</option>
+                            <option class="formText" value="9">10 People</option>
+                            <option class="formText" value="10">11 People</option>
+                            <option class="formText" value="11">12 People</option>
+                            <option class="formText" value="12">13 People</option>
+                            <option class="formText" value="13">14 People</option>
+                            <option class="formText" value="14">15 People</option>
+                            <option class="formText" value="15">16 People</option>
+                            <option class="formText" value="16">17 People</option>
+                            <option class="formText" value="17">18 People</option>
+                            <option class="formText" value="18">19 People</option>
+                            <option class="formText" value="19">20 People</option>
+                        </select>
+                        <h4 class="bookingText">FOR</h4>
+                        <input class="dateBox box formText" type="date">
+                        <h4 class="bookingText">AT</h4>
+                        <select class="form-select timeBox box formText" aria-label="Default select example">
+                            <option class="formText" value="1">6:30 am</option>
+                            <option class="formText" value="2">7:00 am</option>
+                            <option class="formText" value="3">7:30 am</option>
+                            <option class="formText" value="4">8:00 am</option>
+                            <option class="formText" selected value="5">8:30 am</option>
+                            <option class="formText" value="6">9:00 am</option>
+                            <option class="formText" value="7">9:30 am</option>
+                            <option class="formText" value="8">10:00 am</option>
+                            <option class="formText" value="9">10:30 am</option>
+                            <option class="formText" value="10">11:00 am</option>
+                            <option class="formText" value="11">11:30 am</option>
+                            <option class="formText" value="12">12:00 pm</option>
+                            <option class="formText" value="13">12:30 pm</option>
+                            <option class="formText" value="14">01:00 pm</option>
+                            <option class="formText" value="15">01:30 pm</option>
+                            <option class="formText" value="16">02:00 pm</option>
+                            <option class="formText" value="17">02:30 pm</option>
+                            <option class="formText" value="18">03:00 pm</option>
+                            <option class="formText" value="19">03:30 pm</option>
+                            <option class="formText" value="20">04:00 pm</option>
+                            <option class="formText" value="21">04:30 pm</option>
+                            <option class="formText" value="22">05:00 pm</option>
+                            <option class="formText" value="23">05:30 pm</option>
+                            <option class="formText" value="24">06:00 pm</option>
+                            <option class="formText" value="25">06:30 pm</option>
+                            <option class="formText" value="26">07:00 pm</option>
+                            <option class="formText" value="27">07:30 pm</option>
+                            <option class="formText" value="28">08:80 pm</option>
+                            <option class="formText" value="29">08:30 pm</option>
+                            <option class="formText" value="30">09:00 pm</option>
+                            <option class="formText" value="31">09:30 pm</option>
+                            <option class="formText" value="32">10:00 pm</option>
+                            <option class="formText" value="33">10:30 pm</option>
+                            <option class="formText" value="34">11:00 pm</option>
+                            <option class="formText" value="35">11:30 pm</option>
+                        </select>
+                        <button id="bookBtn">BOOK A TABLE</button>
+                    </div>
                 </div>
             </div>
-        </div>
 
+        </div>
     </section>
 </template>
 
@@ -372,7 +374,7 @@ export default {
     height: 62.8px;
     font-size: 0.8rem;
     font-weight: 600;
-    margin-left: 4rem;
+    margin-left: 2rem;
 
     &:hover {
         background-position: 0 100%;
