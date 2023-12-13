@@ -46,8 +46,8 @@ export default {
             <h5>WASHINGTON POST 2018</h5>
         </swiper-slide>
         <swiper-slide>
-            <h2>"FORGET THE TRENDY PIZZA SHOPS, THIS HUDDEN SPOT MAKES THE BEST NEW YORK-STYLE PIZZA SLICE IN NAPLES"</h2>
-            <h5>WASHINGTON POST 2018</h5>
+            <h2>"BASSA E SCROCCHIARELLA"</h2>
+            <h5>FRANCHINO ER CRIMINALE</h5>
         </swiper-slide>
 
     </swiper>
