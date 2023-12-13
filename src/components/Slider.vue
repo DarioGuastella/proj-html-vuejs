@@ -49,10 +49,13 @@ export default {
             <img class="position-absolute imgBc" src="/img/h3-rev-img-5.png" alt="">
             <img class="z-3 deelayImg" src="/img/h3-rev-img-6.png" alt="">
         </swiper-slide>
-
+        <div class="swiper-button-prev">
+            <p>PREV</p>
+        </div>
+        <div class="swiper-button-next">
+            <p>NEXT</p>
+        </div>
     </swiper>
-    <div class="swiper-button-prev">Prova</div>
-    <div class="swiper-button-next">Prova</div>
 </template>
 <style scoped lang="scss">
 .swiper {
@@ -121,29 +124,46 @@ export default {
 //     height: 100%;
 //     object-fit: cover;
 // }
-</style>
-<style>
-/* .jumboR,
-.jumboL {
-    background-color: red;
-    border-radius: 50%;
-    height: 5rem;
-    width: 5rem;
-}
-
-.jumboR {
-    right: -40px;
-
-
-}
-
-.jumboL {
-    left: -40px
-} */
-
 .swiper-button-next::after,
 .swiper-button-prev::after {
     content: "";
 }
+
+.swiper-button-next,
+.swiper-button-prev {
+    background-color: white;
+    border-radius: 50%;
+    height: 5rem;
+    width: 5rem;
+    font-weight: 300;
+    font-size: 1.2rem;
+}
+
+.swiper-button-next {
+    right: -45px;
+
+    p {
+        color: #d2401e;
+        transform: rotate(-90deg);
+        position: relative;
+        top: 8px;
+        bottom: 0;
+        right: 20px;
+    }
+}
+
+.swiper-button-prev {
+    left: -45px;
+
+    p {
+        color: #d2401e;
+        transform: rotate(90deg);
+        position: relative;
+        top: 8px;
+        bottom: 0;
+        left: 20px;
+    }
+}
 </style>
+
   
