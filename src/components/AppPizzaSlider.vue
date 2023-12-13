@@ -1,6 +1,7 @@
 <script>
 // Import Swiper Vue.js components
 import { Swiper, SwiperSlide } from 'swiper/vue';
+import { store } from '../store';
 
 // Import Swiper styles
 import 'swiper/css';
@@ -12,13 +13,18 @@ import 'swiper/css/navigation';
 import { Autoplay, Navigation } from 'swiper/modules';
 
 export default {
+    name: "AppPizzaSlider",
+    props: {
+        data: Object
+    },
     components: {
         Swiper,
         SwiperSlide,
     },
     data() {
         return {
-            modules: [Autoplay, Navigation]
+            modules: [Autoplay, Navigation],
+            store
         };
     },
     methods: {
@@ -32,14 +38,14 @@ export default {
 <template>
     <swiper :slidesPerView="5" :spaceBetween="2" :autoplay="{ delay: 2000, disableOnInteraction: false }" :loop="true"
         :modules="modules" class="mySwiper">
-        <swiper-slide class="text-center">
+        <swiper-slide v-for="pizze, i in this.store.pizzas" class="text-center">
             <div class="pizzaBox">
-                <img src="/img/h3-product-img-1a.png" alt="">
+                <img :src="store.pizzas[i].image" alt="">
             </div>
-            <h3 class="mt-4 pizzaText">BISMARCK</h3>
-            <h3 class="pizzaPrice"><span>$35.00</span>$30.00</h3>
+            <h3 class="mt-4 pizzaText">{{ store.pizzas[i].name }}</h3>
+            <h3 class="pizzaPrice"><span>{{ store.pizzas[i].exprice }}</span>{{ store.pizzas[i].price }}</h3>
         </swiper-slide>
-        <swiper-slide class="text-center">
+        <!-- <swiper-slide class="text-center">
             <div class="pizzaBox">
                 <img src="/img/h3-product-img-2a.png" alt="">
 
@@ -75,7 +81,7 @@ export default {
             </div>
             <h3 class="mt-4 pizzaText">VALDOSTANA</h3>
             <h3 class="pizzaPrice">$55.00</h3>
-        </swiper-slide>
+        </swiper-slide> -->
 
     </swiper>
 </template>
