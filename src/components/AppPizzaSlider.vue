@@ -33,7 +33,8 @@ export default {
 </script>
 
 <template>
-    <swiper :slidesPerView="5" :spaceBetween="2" :loop="true" :modules="modules" class="mySwiper">
+    <swiper :slidesPerView="5" :spaceBetween="2" :loop="true" :modules="modules"
+        :autoplay="{ delay: 2000, pauseOnMouseEnter: true }" class="mySwiper">
         <swiper-slide v-for="pizze, i in this.store.pizzas" class="text-center">
             <div class="pizzaCard">
                 <div class="pizzaBox">
@@ -48,13 +49,13 @@ export default {
             </div>
 
         </swiper-slide>
-        <!-- :autoplay="{ delay: 2000, disableOnInteraction: false }" -->
+
     </swiper>
 </template>
 <style scoped lang="scss">
 .swiper-slide {
     width: 200px;
-    height: 450px;
+    height: 330px;
 
     /* Center slide text vertically */
     img {
