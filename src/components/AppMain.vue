@@ -140,7 +140,63 @@ export default {
     <section>
         <div class="container-fluid py-2 bg-light">
             <div class="row">
-                <div class="col-3 teamCard">
+                <div class="col-3 px-2 hoverContainer">
+                    <img class="teamImg" src="/img/h1-team-1a-700x700.jpg" alt="">
+                    <div class="middle">
+                        <div class="teamText">
+                            <h2>PETER ANDERSON</h2>
+                            <h5>Head Chef</h5>
+                            <span>
+                                <a href="#"><font-awesome-icon class="px-1 socialIcons" icon="fa-brands fa-twitter" /></a>
+                                <a href="#"><font-awesome-icon class="px-1 socialIcons" icon="fa-brands fa-facebook" /></a>
+                                <a href="#"><font-awesome-icon class="px-1 socialIcons" icon="fa-brands fa-instagram" /></a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3 px-2 hoverContainer">
+                    <img class="teamImg" src="/img/h1-team-2a.jpg" alt="">
+                    <div class="middle">
+                        <div class="teamText">
+                            <h2>SHARON HAYES</h2>
+                            <h5>Execute Chef</h5>
+                            <span>
+                                <a href="#"><font-awesome-icon class="px-1 socialIcons" icon="fa-brands fa-twitter" /></a>
+                                <a href="#"><font-awesome-icon class="px-1 socialIcons" icon="fa-brands fa-facebook" /></a>
+                                <a href="#"><font-awesome-icon class="px-1 socialIcons" icon="fa-brands fa-instagram" /></a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3 px-2 hoverContainer">
+                    <img class="teamImg" src="/img/h1-team-4a.jpg" alt="">
+                    <div class="middle">
+                        <div class="teamText">
+                            <h2>FRANK BALEY</h2>
+                            <h5>Kitchen Porter</h5>
+                            <span>
+                                <a href="#"><font-awesome-icon class="px-1 socialIcons" icon="fa-brands fa-twitter" /></a>
+                                <a href="#"><font-awesome-icon class="px-1 socialIcons" icon="fa-brands fa-facebook" /></a>
+                                <a href="#"><font-awesome-icon class="px-1 socialIcons" icon="fa-brands fa-instagram" /></a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3 px-2 hoverContainer">
+                    <img class="teamImg" src="/img/h1-team-3a.jpg" alt="">
+                    <div class="middle">
+                        <div class="teamText">
+                            <h2>CAROL SIMPSON</h2>
+                            <h5>Sous Chef</h5>
+                            <span>
+                                <a href="#"><font-awesome-icon class="px-1 socialIcons" icon="fa-brands fa-twitter" /></a>
+                                <a href="#"><font-awesome-icon class="px-1 socialIcons" icon="fa-brands fa-facebook" /></a>
+                                <a href="#"><font-awesome-icon class="px-1 socialIcons" icon="fa-brands fa-instagram" /></a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="col-3 teamCard">
                     <img class="w-100" src="/img/h1-team-1a-700x700.jpg" alt="">
                 </div>
                 <div class="col-3 teamCard">
@@ -151,7 +207,8 @@ export default {
                 </div>
                 <div class="col-3 teamCard">
                     <img class="w-100" src="/img/h1-team-3a.jpg" alt="">
-                </div>
+                </div> -->
+
             </div>
         </div>
     </section>
@@ -478,6 +535,41 @@ export default {
     padding-right: 0;
     padding-left: 0;
 }
+
+.teamImg {
+    width: 100%;
+    opacity: 1;
+    display: block;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.hoverContainer:hover .teamImg {
+    opacity: 0;
+
+}
+
+.teamText {
+    width: 400px;
+    height: 400px;
+    background-color: #d2401e;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+    padding-top: 9rem;
+    text-align: center;
+
+    span {
+        position: relative;
+        top: 12px;
+        font-size: 1rem;
+
+        a {
+            color: white;
+        }
+    }
+}
+
 
 //Sezione 6 - Clients
 
