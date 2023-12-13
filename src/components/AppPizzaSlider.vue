@@ -151,7 +151,7 @@ export default {
     line-height: 200%;
     border: 0;
     /*Magic*/
-    background-image: linear-gradient(#f6f7f2, #f6f7f2 50%, #c83b1a 50%, #c83b1a);
+    background-image: linear-gradient(#f6f7f2, #f6f7f2 50%, #e4e4d4 50%, #e4e4d4);
     background-size: 100% 200%;
     transition: background-position .3s;
     color: black;
