@@ -3,12 +3,14 @@ import { store } from "../store.js" //state management
 import register from "../debug" //per debuggare il componente da console
 import Slider from "./Slider.vue"
 import AppPizzaSlider from "./AppPizzaSlider.vue"
+import SliderTestimonialsVue from "./SliderTestimonials.vue"
 
 export default {
     name: "AppMain",
     components: {
         Slider,
-        AppPizzaSlider
+        AppPizzaSlider,
+        SliderTestimonialsVue
     },
     data() {
         return {
@@ -30,6 +32,7 @@ export default {
 <template>
     <!-- JUMBO -->
     <Slider />
+
     <!-- SEZIONE 1 -->
     <section class="container-fluid bg-light py-2 w-100">
         <div class="row">
@@ -70,9 +73,10 @@ export default {
     <!-- SEZIONE 2 TESTIMONIALS -->
     <section class="container-fluid sectionBeige"><!-- ToDo: slider -->
         <div class="row">
+
             <div class="col-6 offset-md-3 text-center">
                 <h2 class="quotesMark">“</h2>
-
+                <SliderTestimonialsVue />
             </div>
         </div>
     </section>
@@ -395,6 +399,7 @@ export default {
 .sectionBeige {
     background-image: url("/img/h3-testimonials-bckgrnd.jpg");
     height: 485px;
+    position: relative;
 }
 
 //Sezione 3 - Specials

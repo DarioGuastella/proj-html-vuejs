@@ -15,3 +15,7 @@ body {
     background-color: $themeColorDark;
     color: $themeColorLight;
 }
+
+.swiper-pagination-bullet-active {
+    background-color: #b7903c !important;
+}

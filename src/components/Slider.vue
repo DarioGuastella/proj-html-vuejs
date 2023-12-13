@@ -129,6 +129,12 @@ export default {
     content: "";
 }
 
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+    transition: 0.4s;
+    background-color: #b39961;
+}
+
 .swiper-button-next,
 .swiper-button-prev {
     background-color: white;
