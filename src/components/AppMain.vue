@@ -164,7 +164,7 @@ export default {
 
             </div>
         </div>
-        <AppPizzaSlider />
+        <AppPizzaSlider :data="store.pizzas" />
     </section>
     <!-- Sezione 8 -  Deals ToDo: icon & hover-->
     <section>
