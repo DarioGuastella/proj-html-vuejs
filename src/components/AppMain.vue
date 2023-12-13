@@ -100,22 +100,6 @@ export default {
                                 veniam architecto.</p>
                         </div>
                     </div>
-                    <!-- <div class="d-flex">
-                        <h4 class="specialsPrice">$20</h4>
-                        <div class="ps-4">
-                            <h4 class="specialsTitles">COMBO MEZZO</h4>
-                            <p class="specialsParag">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae,
-                                veniam architecto.</p>
-                        </div>
-                    </div>
-                    <div class="d-flex">
-                        <h4 class="specialsPrice">$30</h4>
-                        <div class="ps-4">
-                            <h4 class="specialsTitles">COMBO GRANDE</h4>
-                            <p class="specialsParag">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae,
-                                veniam architecto.</p>
-                        </div>
-                    </div> -->
 
                 </div>
             </div>
@@ -154,61 +138,6 @@ export default {
                         </div>
                     </div>
                 </div>
-                <!-- <div class="col-3 px-2 hoverContainer">
-                    <img class="teamImg" src="/img/h1-team-2a.jpg" alt="">
-                    <div class="middle">
-                        <div class="teamText">
-                            <h2>SHARON HAYES</h2>
-                            <h5>Execute Chef</h5>
-                            <span>
-                                <a href="#"><font-awesome-icon class="px-1 socialIcons" icon="fa-brands fa-twitter" /></a>
-                                <a href="#"><font-awesome-icon class="px-1 socialIcons" icon="fa-brands fa-facebook" /></a>
-                                <a href="#"><font-awesome-icon class="px-1 socialIcons" icon="fa-brands fa-instagram" /></a>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-3 px-2 hoverContainer">
-                    <img class="teamImg" src="/img/h1-team-4a.jpg" alt="">
-                    <div class="middle">
-                        <div class="teamText">
-                            <h2>FRANK BALEY</h2>
-                            <h5>Kitchen Porter</h5>
-                            <span>
-                                <a href="#"><font-awesome-icon class="px-1 socialIcons" icon="fa-brands fa-twitter" /></a>
-                                <a href="#"><font-awesome-icon class="px-1 socialIcons" icon="fa-brands fa-facebook" /></a>
-                                <a href="#"><font-awesome-icon class="px-1 socialIcons" icon="fa-brands fa-instagram" /></a>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-3 px-2 hoverContainer">
-                    <img class="teamImg" src="/img/h1-team-3a.jpg" alt="">
-                    <div class="middle">
-                        <div class="teamText">
-                            <h2>CAROL SIMPSON</h2>
-                            <h5>Sous Chef</h5>
-                            <span>
-                                <a href="#"><font-awesome-icon class="px-1 socialIcons" icon="fa-brands fa-twitter" /></a>
-                                <a href="#"><font-awesome-icon class="px-1 socialIcons" icon="fa-brands fa-facebook" /></a>
-                                <a href="#"><font-awesome-icon class="px-1 socialIcons" icon="fa-brands fa-instagram" /></a>
-                            </span>
-                        </div>
-                    </div>
-                </div> -->
-                <!-- <div class="col-3 teamCard">
-                    <img class="w-100" src="/img/h1-team-1a-700x700.jpg" alt="">
-                </div>
-                <div class="col-3 teamCard">
-                    <img class="w-100" src="/img/h1-team-2a.jpg" alt="">
-                </div>
-                <div class="col-3 teamCard">
-                    <img class="w-100" src="/img/h1-team-4a.jpg" alt="">
-                </div>
-                <div class="col-3 teamCard">
-                    <img class="w-100" src="/img/h1-team-3a.jpg" alt="">
-                </div> -->
-
             </div>
         </div>
     </section>
@@ -217,11 +146,7 @@ export default {
         <div class="container clientsWrapper d-flex">
             <div class="row align-self-center">
                 <div class="col-12 px-0">
-                    <img class="clientsImg" src="/img/h1-clients-img-1.png" alt="">
-                    <img class="clientsImg" src="/img/h1-clients-img-2.png" alt="">
-                    <img class="clientsImg" src="/img/h1-clients-img-3.png" alt="">
-                    <img class="clientsImg" src="/img/h1-clients-img-4.png" alt="">
-                    <img class="clientsImg" src="/img/h1-clients-img-5.png" alt="">
+                    <img v-for="client in store.clients" class="clientsImg" :src="client.image" alt="">
                 </div>
             </div>
         </div>

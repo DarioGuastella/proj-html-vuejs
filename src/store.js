@@ -69,5 +69,22 @@ export const store = reactive({
             name: "COMBO GRANDE",
             price: "$30"
         },
+    ],
+    clients: [
+        {
+            image: "/img/h1-clients-img-1.png"
+        },
+        {
+            image: "/img/h1-clients-img-2.png"
+        },
+        {
+            image: "/img/h1-clients-img-3.png"
+        },
+        {
+            image: "/img/h1-clients-img-4.png"
+        },
+        {
+            image: "/img/h1-clients-img-5.png"
+        },
     ]
 })
