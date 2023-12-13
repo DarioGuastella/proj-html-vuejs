@@ -97,7 +97,7 @@ export default {
 
         span {
             text-decoration: line-through;
-            color: #d3cfaf94;
+            color: #d3cfaf;
             padding-right: 0.5rem;
         }
     }

@@ -16,9 +16,10 @@ import { faFacebook } from "@fortawesome/free-brands-svg-icons"
 import { faTwitter } from "@fortawesome/free-brands-svg-icons"
 import { faInstagram } from "@fortawesome/free-brands-svg-icons"
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons"
+import { faEye } from '@fortawesome/free-solid-svg-icons'
 
 /* add icons to the library */
-library.add(faMagnifyingGlass, faFacebook, faTwitter, faInstagram, faLinkedin);
+library.add(faMagnifyingGlass, faFacebook, faTwitter, faInstagram, faLinkedin, faEye);
 
 window.vue = {};
 window.vue.App = createApp(App)

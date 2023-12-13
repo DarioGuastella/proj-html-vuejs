@@ -2,14 +2,12 @@
 import { store } from "../store.js" //state management
 import register from "../debug" //per debuggare il componente da console
 import Slider from "./Slider.vue"
-import SliderQuotes from "./SliderQuotes.vue"
 import AppPizzaSlider from "./AppPizzaSlider.vue"
 
 export default {
     name: "AppMain",
     components: {
         Slider,
-        SliderQuotes,
         AppPizzaSlider
     },
     data() {
@@ -31,14 +29,42 @@ export default {
 
 <template>
     <!-- JUMBO -->
-    <Slider /><!-- ToDo: slider content e fade -->
+    <Slider />
     <!-- SEZIONE 1 -->
-    <section class="container-fluid bg-light py-2 w-100"> <!-- ToDo: hover -->
+    <section class="container-fluid bg-light py-2 w-100">
         <div class="row">
-            <div class="col-3 px-2"><img class="quarterImg" src="/img/h3-img-1.jpg" alt=""></div>
-            <div class="col-3 px-2"><img class="quarterImg" src="/img/h3-img-2.jpg" alt=""></div>
-            <div class="col-3 px-2"><img class="quarterImg" src="/img/h3-img-3.jpg" alt=""></div>
-            <div class="col-3 px-2"><img class="quarterImg" src="/img/h3-img-4.jpg" alt=""></div>
+            <div class="col-3 px-2 hoverContainer">
+                <img class="quarterImg" src="/img/h3-img-1.jpg" alt="">
+                <div class="middle">
+                    <div class="text">
+                        <span><font-awesome-icon :icon="['fas', 'eye']" /></span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3 px-2 hoverContainer">
+                <img class="quarterImg" src="/img/h3-img-2.jpg" alt="">
+                <div class="middle">
+                    <div class="text">
+                        <span><font-awesome-icon :icon="['fas', 'eye']" /></span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3 px-2 hoverContainer">
+                <img class="quarterImg" src="/img/h3-img-3.jpg" alt="">
+                <div class="middle">
+                    <div class="text">
+                        <span><font-awesome-icon :icon="['fas', 'eye']" /></span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3 px-2 hoverContainer">
+                <img class="quarterImg" src="/img/h3-img-4.jpg" alt="">
+                <div class="middle">
+                    <div class="text">
+                        <span><font-awesome-icon :icon="['fas', 'eye']" /></span>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
     <!-- SEZIONE 2 TESTIMONIALS -->
@@ -282,9 +308,81 @@ export default {
 // importo variabili
 // @use './styles/partials/variables' as *;
 //Sezione 1 - after jumbotron
+.hoverContainer {
+    position: relative;
+}
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+
+}
+
+.hoverContainer:hover .quarterImg {
+    opacity: 0;
+
+}
+
+.hoverContainer:hover {
+    background-image: url("/img/dotted-pattern.png");
+    background-size: 70%;
+    cursor: pointer;
+
+}
+
+
+.hoverContainer:hover .middle {
+    opacity: 1;
+
+}
+
+.hoverContainer:hover .text {
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+    animation-name: zoomIn;
+
+}
+
+@keyframes zoomIn {
+    from {
+        scale: 0.5;
+    }
+
+    to {
+        scale: 1;
+    }
+}
+
+.text {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background-color: #d2401e;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+    text-align: center;
+
+    span {
+        position: relative;
+        top: 12px;
+        font-size: 1.3rem;
+    }
+}
+
 .quarterImg {
     width: 468px;
     height: 320px;
+    opacity: 1;
+    display: block;
+    transition: .5s ease;
+    backface-visibility: hidden;
 }
 
 //Sezione 2 - quotes slider
@@ -391,7 +489,7 @@ export default {
     width: calc(100% / 5);
 }
 
-//Sezione 7 - pizza menu
+//Sezione 7 - pizza menu ToDo: button hover e sticker
 .pizzaUpperText {
     margin: 5rem auto;
 
@@ -401,15 +499,20 @@ export default {
         letter-spacing: 3px;
     }
 
+    h2 {
+        color: black;
+    }
+
     p {
-        color: #a6a6a6;
+        color: #767676;
         font-weight: 300;
         font-size: 1.2rem;
     }
 }
 
 .pizzaSection {
-    height: 850px;
+    height: 800px;
+    background-color: white;
 }
 
 //Sezione 8 - Deals
