@@ -92,15 +92,15 @@ export default {
                     <h3 class="specialsTitles">SPECIALS*</h3>
                     <p class="specialsParag pb-4 fs-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesent
                         ut.</p>
-                    <div class="d-flex">
-                        <h4 class="specialsPrice">$10</h4>
+                    <div v-for="combo in store.comboOptions" class="d-flex">
+                        <h4 class="specialsPrice">{{ combo.price }}</h4>
                         <div class="ps-4">
-                            <h4 class="specialsTitles">COMBO PICCOLO</h4>
+                            <h4 class="specialsTitles">{{ combo.name }}</h4>
                             <p class="specialsParag">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae,
                                 veniam architecto.</p>
                         </div>
                     </div>
-                    <div class="d-flex">
+                    <!-- <div class="d-flex">
                         <h4 class="specialsPrice">$20</h4>
                         <div class="ps-4">
                             <h4 class="specialsTitles">COMBO MEZZO</h4>
@@ -115,7 +115,7 @@ export default {
                             <p class="specialsParag">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae,
                                 veniam architecto.</p>
                         </div>
-                    </div>
+                    </div> -->
 
                 </div>
             </div>
@@ -140,12 +140,12 @@ export default {
     <section>
         <div class="container-fluid py-2 bg-light">
             <div class="row">
-                <div v-for="members, i in store.teamMembers" class="col-3 px-2 hoverContainer">
-                    <img class="teamImg" :src="store.teamMembers[i].image" alt="">
+                <div v-for="member in store.teamMembers" class="col-3 px-2 hoverContainer">
+                    <img class="teamImg" :src="member.image" alt="">
                     <div class="middle">
                         <div class="teamText">
-                            <h2>{{ store.teamMembers[i].name }}</h2>
-                            <h5>{{ store.teamMembers[i].role }}</h5>
+                            <h2>{{ member.name }}</h2>
+                            <h5>{{ member.role }}</h5>
                             <span>
                                 <a href="#"><font-awesome-icon class="px-1 socialIcons" icon="fa-brands fa-twitter" /></a>
                                 <a href="#"><font-awesome-icon class="px-1 socialIcons" icon="fa-brands fa-facebook" /></a>

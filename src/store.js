@@ -55,5 +55,19 @@ export const store = reactive({
             role: "Sous Chef",
             image: "/img/h1-team-3a.jpg"
         },
+    ],
+    comboOptions: [
+        {
+            name: "COMBO PICCOLA",
+            price: "$10"
+        },
+        {
+            name: "COMBO MEDIA",
+            price: "$20"
+        },
+        {
+            name: "COMBO GRANDE",
+            price: "$30"
+        },
     ]
 })

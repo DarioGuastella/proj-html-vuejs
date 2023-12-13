@@ -35,13 +35,13 @@ export default {
 <template>
     <swiper :slidesPerView="5" :spaceBetween="2" :loop="true" :modules="modules"
         :autoplay="{ delay: 2000, pauseOnMouseEnter: true }" class="mySwiper">
-        <swiper-slide v-for="pizze, i in this.store.pizzas" class="text-center">
+        <swiper-slide v-for="pizza in this.store.pizzas" class="text-center">
             <div class="pizzaCard">
                 <div class="pizzaBox">
-                    <img :src="store.pizzas[i].image" alt="">
+                    <img :src="pizza.image" alt="">
                 </div>
-                <h3 class="mt-4 pizzaText">{{ store.pizzas[i].name }}</h3>
-                <h3 class="pizzaPrice"><span>{{ store.pizzas[i].exprice }}</span>{{ store.pizzas[i].price }}</h3>
+                <h3 class="mt-4 pizzaText">{{ pizza.name }}</h3>
+                <h3 class="pizzaPrice"><span>{{ pizza.exprice }}</span>{{ pizza.price }}</h3>
                 <div class="d-flex">
                     <button class="viewBtn button me-2">ADD TO CART</button>
                     <button class="quickBtn button">QUICK VIEW</button>
