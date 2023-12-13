@@ -4,13 +4,8 @@ import { Swiper, SwiperSlide } from 'swiper/vue';
 
 // Import Swiper styles
 import 'swiper/css';
-
-import 'swiper/css/navigation';
-
-
 // import required modules
-import { Autoplay, Navigation } from 'swiper/modules';
-
+import { Autoplay } from 'swiper/modules';
 export default {
     components: {
         Swiper,
@@ -18,25 +13,30 @@ export default {
     },
     data() {
         return {
-            modules: [Autoplay, Navigation],
-            navigation: {                       //navigation(arrows)
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
-
+            modules: [Autoplay],
+            swiper: null
         };
     },
     methods: {
-
+        onSwiper(instance) {
+            console.log("swiper avviato");
+            this.swiper = instance
+        },
+        swiperNext() {
+            this.swiper.slideNext()
+        },
     },
     mounted() {
+        window.x = this.swiper
     }
 };
 </script>
 
+
+
 <template>
-    <swiper :direction="'vertical'" :autoplay="{ delay: 5000, disableOnInteraction: false }" :navigation="navigation"
-        :loop="true" :modules="modules" class="mySwiper">
+    <swiper @swiper="onSwiper" :direction="'vertical'" :autoplay="{ delay: 5000, disableOnInteraction: false }"
+        :navigation="false" :loop="true" :modules="modules" class="mySwiper">
         <swiper-slide>
             <img class="position-absolute imgBc" src="/img/h3-rev-img-1.png" alt="">
             <img class="z-3 deelayImg" src="/img/h3-rev-img-2.png" alt="">
@@ -51,8 +51,7 @@ export default {
         </swiper-slide>
 
     </swiper>
-    <div class="swiper-button-prev">Prova</div>
-    <div class="swiper-button-next">Prova</div>
+    <button v-if="swiper" @click="swiperNext()">Slide to the next slide</button>
 </template>
 <style scoped lang="scss">
 .swiper {
@@ -141,8 +140,8 @@ export default {
     left: -40px
 } */
 
-.swiper-button-next::after,
-.swiper-button-prev::after {
+.jumboR::after,
+.jumboL::after {
     content: "";
 }
 </style>

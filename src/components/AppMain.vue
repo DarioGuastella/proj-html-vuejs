@@ -2,11 +2,13 @@
 import { store } from "../store.js" //state management
 import register from "../debug" //per debuggare il componente da console
 import Slider from "./Slider.vue"
+import SliderQuotes from "./SliderQuotes.vue"
 
 export default {
     name: "AppMain",
     components: {
-        Slider
+        Slider,
+        SliderQuotes
     },
     data() {
         return {
@@ -257,6 +259,7 @@ export default {
 
         </div>
     </section>
+    <SliderQuotes />
 </template>
 
 <style scoped lang="scss">
@@ -420,11 +423,11 @@ export default {
 
 .peopleBox {
 
-    background-image: url(../../public/svg/user-group-solid.svg);
+    background-image: url(/svg/user-group-solid.svg);
 }
 
 .timeBox {
-    background-image: url(../../public/svg/clock-regular.svg);
+    background-image: url(/svg/clock-regular.svg);
     background-size: 7%;
 }
 
@@ -462,6 +465,8 @@ export default {
         background-position: 0 100%;
     }
 }
+
+
 
 // ...qui eventuale SCSS di AppComponent
 </style>
