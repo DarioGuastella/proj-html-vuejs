@@ -3,12 +3,14 @@ import { store } from "../store.js" //state management
 import register from "../debug" //per debuggare il componente da console
 import Slider from "./Slider.vue"
 import SliderQuotes from "./SliderQuotes.vue"
+import AppPizzaSlider from "./AppPizzaSlider.vue"
 
 export default {
     name: "AppMain",
     components: {
         Slider,
-        SliderQuotes
+        SliderQuotes,
+        AppPizzaSlider
     },
     data() {
         return {
@@ -137,6 +139,21 @@ export default {
             </div>
         </div>
     </section>
+    <!-- Sezione 7 - Pizza menu -->
+    <section class="pizzaSection">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center w-50 pizzaUpperText">
+                    <h5>CHOOSE YOUR FLAVOR</h5>
+                    <h2>THE BEST PIZZA MENU IN TOWN</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae repudiandae dolor officia ipsam
+                        non soluta repellendus in iste.</p>
+                </div>
+
+            </div>
+        </div>
+        <AppPizzaSlider />
+    </section>
     <!-- Sezione 8 -  Deals ToDo: icon & hover-->
     <section>
         <div class="container-fluid">
@@ -259,7 +276,6 @@ export default {
 
         </div>
     </section>
-    <SliderQuotes />
 </template>
 
 <style scoped lang="scss">
@@ -373,6 +389,27 @@ export default {
 
 .clientsImg {
     width: calc(100% / 5);
+}
+
+//Sezione 7 - pizza menu
+.pizzaUpperText {
+    margin: 5rem auto;
+
+    h5 {
+        color: #d2401e;
+        font-size: 0.8rem;
+        letter-spacing: 3px;
+    }
+
+    p {
+        color: #a6a6a6;
+        font-weight: 300;
+        font-size: 1.2rem;
+    }
+}
+
+.pizzaSection {
+    height: 850px;
 }
 
 //Sezione 8 - Deals
