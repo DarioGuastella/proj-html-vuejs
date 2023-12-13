@@ -140,12 +140,12 @@ export default {
     <section>
         <div class="container-fluid py-2 bg-light">
             <div class="row">
-                <div class="col-3 px-2 hoverContainer">
-                    <img class="teamImg" src="/img/h1-team-1a-700x700.jpg" alt="">
+                <div v-for="members, i in store.teamMembers" class="col-3 px-2 hoverContainer">
+                    <img class="teamImg" :src="store.teamMembers[i].image" alt="">
                     <div class="middle">
                         <div class="teamText">
-                            <h2>PETER ANDERSON</h2>
-                            <h5>Head Chef</h5>
+                            <h2>{{ store.teamMembers[i].name }}</h2>
+                            <h5>{{ store.teamMembers[i].role }}</h5>
                             <span>
                                 <a href="#"><font-awesome-icon class="px-1 socialIcons" icon="fa-brands fa-twitter" /></a>
                                 <a href="#"><font-awesome-icon class="px-1 socialIcons" icon="fa-brands fa-facebook" /></a>
@@ -154,7 +154,7 @@ export default {
                         </div>
                     </div>
                 </div>
-                <div class="col-3 px-2 hoverContainer">
+                <!-- <div class="col-3 px-2 hoverContainer">
                     <img class="teamImg" src="/img/h1-team-2a.jpg" alt="">
                     <div class="middle">
                         <div class="teamText">
@@ -195,7 +195,7 @@ export default {
                             </span>
                         </div>
                     </div>
-                </div>
+                </div> -->
                 <!-- <div class="col-3 teamCard">
                     <img class="w-100" src="/img/h1-team-1a-700x700.jpg" alt="">
                 </div>
