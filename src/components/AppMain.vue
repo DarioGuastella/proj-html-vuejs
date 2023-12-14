@@ -79,6 +79,7 @@ export default {
                 <SliderTestimonialsVue />
             </div>
         </div>
+
     </section>
     <!-- SEZIONE 3 SPECIALS -->
     <section class="container-fluid sectionSpecials w-100">
@@ -294,6 +295,7 @@ export default {
 // importo variabili
 // @use './styles/partials/variables' as *;
 //Sezione 1 - after jumbotron
+
 .hoverContainer {
     position: relative;
 }

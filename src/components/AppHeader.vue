@@ -2,6 +2,7 @@
 import { store } from "../store.js" //state management
 import register from "../debug" //per debuggare il componente da console
 
+
 export default {
     name: "AppHeader",
     data() {
@@ -44,6 +45,7 @@ export default {
                 </div>
             </div>
         </div>
+
     </header>
 </template>
 
