@@ -52,6 +52,18 @@ export default {
 <style scoped lang="scss">
 // importo variabili
 // @use './styles/partials/variables' as *;
+
+//prova
+li {
+    visibility: hidden;
+    height: 0;
+}
+
+ul:hover li {
+    visibility: visible;
+    height: auto;
+}
+
 a {
     text-decoration: none;
     color: inherit;
