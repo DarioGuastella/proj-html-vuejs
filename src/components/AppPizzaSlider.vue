@@ -37,7 +37,7 @@ export default {
 
 <template>
     <swiper :slidesPerView="5" :spaceBetween="2" :loop="true" :modules="modules"
-        :autoplay="{ delay: 22000, pauseOnMouseEnter: true }" class="mySwiper">
+        :autoplay="{ delay: 2000, pauseOnMouseEnter: true }" class="mySwiper">
         <swiper-slide v-for="dato in data" class="text-center">
             <div class="pizzaCard">
                 <div class="pizzaBox">
